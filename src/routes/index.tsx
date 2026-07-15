@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { ReviewsSection } from "@/components/reviews-section";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
@@ -260,6 +261,9 @@ function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* REVIEWS */}
+      <ReviewsSection />
 
       {/* FAQ */}
       <section id="faq" className="bg-muted/40 border-y border-border/60 py-20">
